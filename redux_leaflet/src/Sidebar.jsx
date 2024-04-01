@@ -21,22 +21,26 @@ const Sidebar = ({ marker, onClose }) => {
   };
 
   return isOpen ? (
-    <div style={{ width: 350, height: 700, position: 'absolute', bottom: 0, right: 0, backgroundColor: '#ECEEF1', zIndex: 9999 }}>
+    <div style={{ width: 350, height: '98vh', position: 'absolute', bottom: 20, left: 0, backgroundColor: '#EAF1F7', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', zIndex: 9999 }}>
       {/* Close button */}
-      <button onClick={handleClose} style={{ position: 'absolute', top: '5px', right: '5px', zIndex: 1000 }}>Close</button>
-      {/* Display marker information */}
-      <h2 style={{color:'#1688EE'}}>{marker.name}</h2>
-      <div style={{ maxWidth: '100%', maxHeight: '400px', marginBottom: '10px' }}>
-        {/* Display carousel */}
-        <Slider {...settings}>
-          {marker.photos && marker.photos.map((photo, index) => (
-            <div key={index}>
-              <img src={photo} alt={`Photo ${index}`} style={{ width: '100%', height: 'auto' }} />
-            </div>
-          ))}
-        </Slider>
-
-        <p style={{marginTop:'50px'}}>Description: {marker.description}</p>
+      <button onClick={handleClose} style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: '#fff', border: 'none', borderRadius: '50%', width: '30px', height: '30px', lineHeight: '30px', textAlign: 'center', cursor: 'pointer', zIndex: 1000, boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>X</button>
+      {/* Marker information */}
+      <div style={{ padding: '20px' }}>
+        <h2 style={{ color: '#1688EE', marginBottom: '10px' }}>{marker.name}</h2>
+        {/* Carousel */}
+        <div style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '20px' }}>
+          <Slider {...settings}>
+            {marker.photos && marker.photos.map((photo, index) => (
+              <div key={index}>
+                <img src={photo} alt={`pic ${index}`} style={{ width: '100%', height: 'auto', borderRadius: '5px' }} />
+              </div>
+            ))}
+          </Slider>
+        </div>
+        {/* Description */}
+        <p style={{ marginBottom: '20px', color: '#333' }}>Description: {marker.description}</p>
+        {/* Additional content */}
+        {/* Add any additional content here */}
       </div>
     </div>
   ) : null;

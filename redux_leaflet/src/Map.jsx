@@ -17,7 +17,7 @@ function Map({ markers }) {
   const location = useGeoLocation();
   const [endPoint, setEndPoint] = useState(null);
   const [selectedMarker, setSelectedMarker] = useState(null); // State to store the selected marker
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [ setSidebarOpen] = useState(false); //sidebarOpen,
 
   // Function to handle map click event
   const handleMapClick = (e) => {
@@ -63,7 +63,7 @@ function Map({ markers }) {
         {endPoint && startPoint && (
           <RoutingMachine
             key={endPoint}
-            position={"topleft"}
+            position={"topright"}
             start={startPoint}
             end={endPoint}
             color={"#757de8"}
