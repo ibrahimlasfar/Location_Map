@@ -17,7 +17,8 @@ function Map({ markers }) {
   const location = useGeoLocation();
   const [endPoint, setEndPoint] = useState(null);
   const [selectedMarker, setSelectedMarker] = useState(null); // State to store the selected marker
-  const [ setSidebarOpen] = useState(false); //sidebarOpen,
+  // eslint-disable-next-line no-unused-vars
+  const [sidebarOpen, setSidebarOpen] = useState(false); //sidebarOpen,
 
   // Function to handle map click event
   const handleMapClick = (e) => {
