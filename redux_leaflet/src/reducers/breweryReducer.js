@@ -11,7 +11,8 @@ const initialState = {
       price: '3000 MAD/mois',
       bedrooms: 2,
       availability: 'Disponible',
-      photos: [require('../images/appr.jpeg'), require('../images/bedr.jpeg'), require('../images/cuir.jpeg')]
+      photos: [require('../images/appr.jpeg'), require('../images/bedr.jpeg'), require('../images/cuir.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
       latitude: 33.573110,
@@ -21,7 +22,8 @@ const initialState = {
       price: '8000 MAD/mois',
       bedrooms: 4,
       availability: 'Disponible',
-      photos: [require('../images/villac.jpeg'), require('../images/piscinc.jpeg'), require('../images/bedc.jpeg'), require('../images/hallc.jpeg')]
+      photos: [require('../images/villac.jpeg'), require('../images/piscinc.jpeg'), require('../images/bedc.jpeg'), require('../images/hallc.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
       latitude: 30.422023,
@@ -31,17 +33,19 @@ const initialState = {
       price: '5000 MAD/mois',
       bedrooms: 3,
       availability: 'Non disponible',
-      photos: [require('../images/tradiagadir.jpeg'), require('../images/bedagadir.jpeg'), require('../images/vueagadir.jpeg')]
+      photos: [require('../images/tradiagadir.jpeg'), require('../images/bedagadir.jpeg'), require('../images/vueagadir.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
-      latitude: 34.0331300,
-      longitude: -5.0002800,
+      latitude: 34.046917,
+      longitude: -4.973235,
       name: 'Maison à Fès',
       description: 'Maison traditionnelle rénovée dans la médina',
       price: '4000 MAD/mois',
       bedrooms: 2,
       availability: 'Disponible',
-      photos: [require('../images/tradifes.jpeg'), require('../images/hallfes.jpeg'), require('../images/bedfes.jpeg'), require('../images/cuifes.jpeg')]
+      photos: [require('../images/tradifes.jpeg'), require('../images/hallfes.jpeg'), require('../images/bedfes.jpeg'), require('../images/cuifes.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
       latitude: 31.631549,
@@ -51,7 +55,8 @@ const initialState = {
       price: '6000 MAD/mois',
       bedrooms: 3,
       availability: 'Disponible',
-      photos: [require('../images/appkesh.jpeg'), require('../images/bedkesh.jpeg'), require('../images/cuikesh.jpeg')]
+      photos: [require('../images/appkesh.jpeg'), require('../images/bedkesh.jpeg'), require('../images/cuikesh.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
       latitude: 35.762834,
@@ -61,7 +66,8 @@ const initialState = {
       price: '10000 MAD/mois',
       bedrooms: 4,
       availability: 'Disponible',
-      photos: [require('../images/villat.jpeg'), require('../images/vuet.jpeg'),  require('../images/cuit.jpeg')]
+      photos: [require('../images/villat.jpeg'), require('../images/vuet.jpeg'),  require('../images/cuit.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
       latitude: 33.8938,
@@ -71,17 +77,19 @@ const initialState = {
       price: '3500 MAD/mois',
       bedrooms: 2,
       availability: 'Disponible',
-      photos: [require('../images/appm.jpeg'), require('../images/balconm.jpeg'), require('../images/bedm.jpeg'), require('../images/cuim.jpeg')]
+      photos: [require('../images/appm.jpeg'), require('../images/balconm.jpeg'), require('../images/bedm.jpeg'), require('../images/cuim.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
-      latitude: 30.9189400,
-      longitude: -6.8934100,
+      latitude: 30.920193,
+      longitude: -6.910497, 
       name: 'Villa à Ouarzazate',
       description: 'Villa spacieuse avec jardin et piscine',
       price: '9000 MAD/mois',
       bedrooms: 4,
       availability: 'Disponible',
-      photos: [require('../images/villao.jpeg'), require('../images/jardino.jpeg'), require('../images/bedo.jpeg'), require('../images/hallo.jpeg')]
+      photos: [require('../images/villao.jpeg'), require('../images/jardino.jpeg'), require('../images/bedo.jpeg'), require('../images/hallo.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     },
     {
       latitude: 35.153930,
@@ -91,7 +99,8 @@ const initialState = {
       price: '6000 MAD/mois',
       bedrooms: 3,
       availability: 'Non disponible',
-      photos: [require('../images/maisontradih.jpeg'), require('../images/vueh.jpeg')]
+      photos: [require('../images/maisontradih.jpeg'), require('../images/vueh.jpeg')],
+      phoneNumber: '06 96 50 30 30'
     }
     
     

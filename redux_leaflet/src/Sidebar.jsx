@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { FaMapMarkerAlt, FaInfoCircle, FaBed, FaCalendarAlt, FaMoneyBillAlt, FaTimes } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaInfoCircle, FaBed, FaCalendarAlt, FaMoneyBillAlt, FaTimes, FaPhone } from 'react-icons/fa';
 
 const Sidebar = ({ marker, onClose }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -39,7 +39,7 @@ const Sidebar = ({ marker, onClose }) => {
               </div>
             ))}
           </Slider>
-          <br></br>
+       
           <br></br>
         </div>
         {/* Description */}
@@ -57,6 +57,9 @@ const Sidebar = ({ marker, onClose }) => {
         </p>
         <p style={{ marginBottom: '20px', color: '#333' }}>
           <FaMoneyBillAlt /> Price: {marker.price}
+        </p>
+        <p style={{ marginBottom: '20px', color: '#333' }}>
+          <FaPhone /> Phone Number: {marker.phoneNumber}
         </p>
         {/* Additional content */}
         {/* Add any additional content here */}
