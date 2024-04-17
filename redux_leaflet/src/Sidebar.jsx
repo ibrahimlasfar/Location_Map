@@ -23,7 +23,7 @@ const Sidebar = ({ marker, onClose }) => {
  
 
   return isOpen ? (
-    <div style={{ width: 350, height: '98vh', position: 'absolute', bottom: 20, left: 0, backgroundColor: '#EAF1F7', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', zIndex: 9999 }}>
+    <div style={{ width: 350, height: '100vh', position: 'absolute', bottom: 20, left: 0, backgroundColor: '#EAF1F7', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', zIndex: 9999 }}>
       {/* Close button */}
       <button onClick={handleClose} style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: '#fff', border: 'none', borderRadius: '50%', width: '30px', height: '30px', lineHeight: '30px', textAlign: 'center', cursor: 'pointer', zIndex: 1000, boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}><FaTimes /></button>
       {/* Marker information */}

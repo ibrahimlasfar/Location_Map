@@ -11,7 +11,9 @@ import useGeoLocation from "./hooks/useGeolocation";
 import RoutingMachine from "./RoutingControl";
 import LeafletControlGeocoder from "./LeafletControlGeocoder";
 import Sidebar from "./Sidebar"; // Import the Sidebar component
-
+import MarkerClusterGroup from 'react-leaflet-cluster';
+import currentLocationIcon from "./images/pin.png";
+import L from "leaflet";
 // Define Map component
 function Map({ markers }) {
   const location = useGeoLocation();
@@ -39,6 +41,12 @@ function Map({ markers }) {
   const handleCloseSidebar = () => {
     setSidebarOpen(false);
   };
+  const customIcon = L.icon({
+    iconUrl: currentLocationIcon, // Path to your custom icon image
+    iconSize: [35, 44], // Size of the icon
+    iconAnchor: [12, 41], // Anchor point of the icon
+    popupAnchor: [1, -34], // Popup anchor point
+  });
 
   const startPoint =
     location.loaded && !location.error
@@ -70,6 +78,9 @@ function Map({ markers }) {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <MarkerClusterGroup>
+
+        
         {markers.map((marker, index) => (
           <Marker
             key={index}
@@ -83,9 +94,11 @@ function Map({ markers }) {
             </Popup>
           </Marker>
         ))}
+        </MarkerClusterGroup>
         {location.loaded && !location.error && (
           <Marker
             position={[location.coordinates.lat, location.coordinates.lng]}
+            icon={customIcon}
           >
             <Popup>
               <div>
